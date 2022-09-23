@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> interlude </title>
+
+<body background=Moreau_du_Temple.jpg>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function ns(e) {
+	x=e.x; y=e.y;
+	document.layers["suivi"].visibility="show";
+	document.layers["suivi"].top=e.pageY;
+	document.layers["suivi"].left=e.pageX;
+	}
+
+function ie() {
+	var f=window.event;
+	document.all["suivi"].style.visibility="visible"
+	document.all["suivi"].style.top=f.y+document.body.scrollTop;
+	document.all["suivi"].style.left=f.x;
+	}
+
+function InitSuivi(texte,dX,dY) {
+	if (document.layers) {
+	document.write("<LAYER name='suivi' visibility='hidden'>"+texte+"</LAYER>");
+	document.captureEvents(Event.MOUSEMOVE); document.onmousemove = ns;
+	}
+
+	if (document.all) {
+		document.onmousemove=ie;
+		document.write("<DIV id='suivi' style='position:absolute;top:0;left:0;visibility:hide'>"+texte+"</DIV>");
+		}
+	}
+</SCRIPT>
+</HEAD>
+
+<SCRIPT language="JavaScript">
+	InitSuivi("<img src=bateau.jpg>");
+</SCRIPT>
+
+</html>

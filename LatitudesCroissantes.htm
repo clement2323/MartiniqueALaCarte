@@ -1,0 +1,166 @@
+<html> 
+<head>
+<meta http-equiv=Content-Type content="text/html">
+<Style>
+<!-- 
+/* balises pour ne pas visualiser les styles : */
+/* apparemment Wanadoo ne prend pas les feuilles de styles "css"  */
+H1 {text-align:center;color:black;font:normal 20.0pt "Garamond";font-weight:bold}
+H2 {text-align:center;color:blue;font:normal 15.0pt "Garamond";font-weight:bold}
+H3 {text-align:center;color:blue;font:normal 13.5pt "Garamond";font-weight:bold}
+P {margin-left:10.0pt;text-align:justify;font:normal 13.5pt "Garamond"}
+A:link {background:yellow;color:blue;text-decoration:none}
+A:visited {background:orange;color:green;text-decoration:none}
+A:active {background:white;color:red;text-decoration:none}
+A:hover {background:red;color:black;text-decoration:none}
+-->
+</style>
+<title> La Martinique à la carte : les latitudes croissantes ou la projection de Mercator</title>
+</head>
+
+<body background=papier.jpg lang=FR style='tab-interval:35.4pt'>
+
+<H1>La projection de Mercator : les Latitudes Croissantes et les Cartes Réduites</H1>
+
+<p><a href="projection.htm" target=_self>retour sur les généralités concernant les projections</a></p>
+
+<p>
+Les cartes à latitudes croissantes ont été réalisées pour les besoins de la navigation hauturière afin de pallier 
+le défaut des cartes plates qui ne sont pas suffisamment fiables quand elles représentent de grandes étendues et/ou 
+quand elles sont situées sur des latitudes hautes ou basses [pour certains auteurs, l'usage des cartes plates 
+est même dangeureux quand la latitude est supérieure à 7° Nord ou Sud). Les cartes plates sont généralement 
+suffisantes lorsque leur étendue ne dépasse pas 1° en latitude et/ou en longitude (c'est à dire à l'époque une vingtaine 
+de «lieues marines» soit 20 lieues au degré). 
+<br>
+<br>
+Dans son traité de navigation le mathématicien M. Bezout rappelle que : <cite>La navigation hauturière est celle 
+qui se fait en pleine mer et hors de la vue des côtes. Elle est ainsi nommée parce qu'on y fait souvent usage de la hauteur 
+des astres.</cite>
+<br>
+<br>Les grandes découvertes et la croissance du commerce maritime ont finalement fortement bénéficié de la 
+mise au point de la projection de Mercator. La projection tombait à point, pour faire le point .... et tracer la route.
+<br>
+<br>
+Mercator (Gerhard Kremer né en 1512) a donc imaginé à la fin du XVI<sup>e</sup> siècle une projection particulière 
+- on la date de 1569, c'est à dire l'année à laquelle il a publié sa célèbre carte du monde - permettant aux navigateurs de représenter 
+une même direction (cap ou air de vent ou rhumb, constant) par une ligne droite coupant les méridiens selon le même angle, 
+alors que sur le globe la trajectoire décrit en réalité une courbe. Pour cela, il a représenté les méridiens par des 
+verticales et les parallèles par des horizontales dont l’espacement est proportionnel à l’inverse du cosinus 
+de la Latitude (1 / cos L). 
+<br>
+<br>
+Grâce à cette projection, la <b>réduction</b> des routes suivies par les navires est devenue aisée. 
+C'est pourquoi on appelle communément les cartes à latitudes croissantes des <b>cartes réduites</b>.
+<br>
+<br>La projection de Mercator se réalise de la sphère (terre, ellipsoïde, ...) sur un cylindre vertical tangent 
+à l'équateur et ayant le même axe Nord-Sud. Le cylindre a donc le même diamètre ou le même rayon que celui de la Terre à l'équateur 
+(qui est un grand cercle). La longueur du cylindre est par contre infinie d'un côté comme de l'autre [de l'équateur]. 
+La projection est dite <i>directe</i>, quand le cylindre est vertical, c'est à dire tangent à l'équateur. 
+Lorsque le cylindre est horizontal - tangent à un méridien - la projection est dite <i>transverse</i>.
+<br>
+<br>
+<a href="Croquis_LC.jpg" target=_blank><img width=800 height=400 src="Croquis_LC.jpg" align=left 
+hspace=9 vspace=10 border=0 alt="Croquis : détermination des Latitudes Croissantes"></a>
+La projection de Mercator est une projection dite <b>con<i>forme</i></b>. 
+Comme son nom l'indique elle conserve les <i>formes</i> donc les angles (ou inversement). Mais Aucune projection connue 
+ne conserve à la fois les formes et les surfaces. Celles qui conservent les surfaces sont nommées 
+<b>équivalentes</b> (par exemple la projection d'Archimède). Celle de Mercator, conservant les angles ne conserve donc 
+pas les surfaces (donc les distances). 
+<br>
+<br>
+<br>
+M. Bezout rappelle dans son <i>Traité de la Navigation</i> que : <cite>«Le but de la construction est uniquement de rendre 
+les méridiens paralèlles sans changer le rapport entre les parties du méridien et celles des paralèlles. 
+Pour y parvenir, au lieu de diminuer l'étendue des degrés des parallèles à mesure que la latitude augmente, 
+on leur donne constamment la même grandeur [ndla : en général tâche de les faire constamment égaux à un degré pris à l'équateur]</cite>.
+<br>
+<br>L'arc (c'est à dire la longueur [distance] qui correspond sur la sphère A<sub>p</sub> B<sub>p</sub> pris sur un 
+parallèle quelconque est égal à l'arc A<sub>e</sub> B<sub>e</sub> pris à l'équateur multiplié par le cosinus de la 
+latitude à laquelle se trouve le parallèle. On a donc A<sub>p</sub> B<sub>p</sub> = cos L A<sub>e</sub> B<sub>e</sub> et
+A<sub>p</sub> B<sub>p</sub> x 1 / cos L = A<sub>e</sub> B<sub>e</sub>.
+<br>
+<br>Comme le dit Bezout, le rapport entre les parties du méridien et celles des paralèlles ne doit pas changer, d'où il faut multiplier également
+A<sub>p</sub> C par 1 / cos L. Ce que traduit la relation dy = dL / cos L (dy étant la projection de dL).
+<br>
+<br>
+En général, dans les explications et les démonstrations, on prend un arc A<sub>e</sub> B<sub>e</sub> correspondant à dG (différence de longitude) 
+une minute (1') à l'équateur, ou un mille. Sur le schéma ci-contre, soit a<sub>e</sub>, b<sub>e</sub>, a<sub>p</sub>, b<sub>p</sub> et <b>c</b> 
+les projections sur le cylindre de A<sub>e</sub> , B<sub>e</sub>, A<sub>p</sub>, B<sub>p</sub>, C points de la sphère (ellipsoïde), L la latitude et G la longitude.
+<br>
+<br>
+La projection étant conforme, le triangle <b>A<sub>p</sub> B<sub>p</sub> C</b> inscrit sur la sphère (ellipsoïde) 
+est semblable (et inversement) au triangle <b>a<sub>p</sub> b<sub>p</sub> c</b> projeté sur le cylindre (ici le cylindre à droite étant déroulé). 
+On a donc : 
+<br>
+<br>A<sub>p</sub> C / a<sub>p</sub> c = A<sub>p</sub> B<sub>p</sub> / a<sub>p</sub> b<sub>p</sub>
+<br>
+<br>et a<sub>p</sub> c = dy et a<sub>p</sub> b<sub>p</sub> = dx
+<br>
+<br>il en résulte l'équation déjà mentionnée plus haut : dy = dL / cos L
+<br>
+<br>
+En pratique, il faut imaginer un triangle sphérique <b>A<sub>p</sub> B<sub>p</sub> C</b> très petit résultant d'un écart de latitudes vraies <i>dL</i> 
+valant un certain nombre de minutes (ça dépend de la table que l'on veut construire de 10' en 10' ou 1' en 1'). La somme des multiples <i>dy</i> 
+des petits triangles qui se superposent en partant de l'équateur jusqu'à la latitude L donnera la longueur du méridien rectiligne Y à la latitude L. 
+<br>
+<br>On peut résumer cela en posant : Y = (1/cos(1') + 1/cos(2') + 1/cos(3') + .....+ 1/cos(L')) pour chaque degré en partant de l'équateur (0°) 
+jusqu'à la latitude L.
+<br>
+<br>En intégrant la relation précédente [dy = dL / cos L] on obtient Y = Ln Tan (Pi/4 + L/2) <i>les angles sont ici exprimés en radians</i>
+<br>
+<br>
+Sachant que 180° correspondent à 180 x 60' = 10 800' égales elles-mêmes à Pi radians, on applique la formule précédente à la constante 
+[10 800 / Pi = 3437,74677].
+<br>
+<br>
+On obtient enfin : Y = (10 800 / Pi) * Ln Tan (Pi/4 + L/2), c'est cette valeur que l'on retrouve calculée dans la Table des Latitudes Croissantes 
+de M. Bezout [voir ci-dessous].
+<br>
+<br>
+<a href="Bezout_table_LC.jpg" target=_blank><img width=200 height=300 src="Bezout_table_LC.jpg" align=left 
+hspace=9 vspace=10 border=0 alt="Bezout 1793, Table de latitudes croissantes du Traité de Navigation"></a>
+Les calculs issus de ces formulations ont donné la table de <b>Latitudes Croissantes <i>à portée universelle</i></b>. 
+<br>Ci-contre : table de Latitudes Croissantes parue dans Traité de laNavigation de M. Bezout. imprimerie Ph
+.-D. PIERRES, rue St Jacques, 1793.
+<br>
+<br>note de lecture : notation D = degré, Lon = longueur (calculé du méridien, ie : latitudes croissantes).
+<br>
+<br>La première colonne, celles des minutes «<b>'</b>», donne les fractions de degré, de 10 minutes en 10 minutes 
+(0' ; 10' ; 20' ; 30' ; 40' ; 50'), les colonnes intitules «<b>D</b>» donnent les degrés entiers.
+<br>
+<br>
+<br>
+La Table des Latitudes Croissantes a été l'objet de constants perfectionnements. Des versions ultérieures à celle 
+présentée dans cette page viendront afiner les mesures : elles passeront de calculs de 10' en 10', 
+à une mesure pour chaque minute d'angle. La prise en compte de l'aplatissement de la Terre (rapport d'aplatissement ou 
+rapport des axes de l'ellipsoïde soit : <i>321<b>/</b>320</i> permettra également des mesures de latitudes 
+croissantes plus précises.
+<br>
+<br>
+<h3>Application pratique à la carte des Antilles de Verdun de la Crenne, parue en 1775 au Dépôt de la Marine</h3>
+<br>
+<br>
+<a href="Verdun_1795.jpg" target=_blank><img border=0 width=260 height=430 src="Verdun_1795vig.jpg" align=left
+hspace=10 vspace=10 alt="n°75 bis - Carte de Verdun de la Crenne, Pingré, Borda"></a>
+<br>
+<br>
+La première carte de la feuille, présente les Petites Antilles entre le 13° et le 19° de latitude Nord, la latitude moyenne 
+est de 16°30' et la longitude moyenne de 65°8'. La hauteur de la partie de la carte [entre les bords de l'intérieur du cadre] est approximativement 
+de 53 cm soit 530 mm (elle doit être légèrement différente de son état initial, à peu de chose près, compte tenu de son âge, du «travail» du papier, ...). 
+La largeur [toujours entre les bords de l'intérieur du cadre] est de 54 cm soit 540 mm.
+<br>
+<br>Les latitudes croissantes prises dans la table de Bezout de 1793 (qui n'est pas corrigée de l'aplatissement de la Terre, qui ne donne des LC que 
+de 10' en 10') sont : pour LC(13°) = 787' et LC(19°) = 1161', soit une différence de 374'. 
+La grandeur moyenne de la minute sur la carte vaut donc environ 530 / 374 = 1,42 mm, la  grandeur moyenne du degré
+ équivaut donc à = 85 mm ou 8,5 cm. Comme on le sait la longueur en mm des degrés représentés sur la carte réduite 
+n'est pas égale, elle est plus petite vers 13° et plus grande vers 19°. L'hydrographe a construit son canevas autour 
+d'une échelle où le degré de longitude équivaut à environ 8,65. Compte tenu de la largeur dont il disposait, 
+il a pu représenter un écart de longitude de 6°15' entre le 62° et le 68°15 de longitude Ouest (Obs Royal de Paris).
+<br>
+<br>
+Comme on le sait, la projection de Mercator ne conserve par les distances. Les calculs de longueur de route, 
+de différence entre un point A et B situés sur la carte, doivent se faire en prenant l'échelle des degrés autour 
+de la latitude moyenne.
+</p>
+</body>
+</html>

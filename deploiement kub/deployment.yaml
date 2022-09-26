@@ -19,8 +19,8 @@ spec:
             claimName: mon-espace
 
       containers:
-        - name: sitemartinique
-          image: cguillo/sitemartinique
+        - name: nginx
+          image: cguillo/site_clem
           volumeMounts:
             - mountPath: /docker-entrypoint-initdb.db
               name: volume

@@ -1,0 +1,27 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      volumes:
+        - name: volume
+          persistentVolumeClaim:
+            claimName: mon-espace
+
+      containers:
+        - name: sitemartinique
+          image: cguillo/sitemartinique
+          volumeMounts:
+            - mountPath: /docker-entrypoint-initdb.db
+              name: volume
+

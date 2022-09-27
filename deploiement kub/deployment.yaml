@@ -14,7 +14,7 @@ spec:
         app: nginx
     spec:
       volumes:
-        - name: volume
+        - name: volumepartage
           persistentVolumeClaim:
             claimName: mon-espace
 
@@ -22,6 +22,16 @@ spec:
         - name: nginx
           image: cguillo/sitemartinique
           volumeMounts:
-            - mountPath: /docker-entrypoint-initdb.db
-              name: volume
-
+            - mountPath: /usr/share/nginx/html/img  # c'est l'endroit dans le docker nginx où on veut monter le volume ie où on veut voir les fixchiers qu'on aura plcé grâce à l'init docker
+              name: volumepartage
+           
+      initContainers:
+        - name: download_images
+          image: curlimages/curl
+          args:
+            - https://minio.lab.sspcloud.fr/cguillo/site_carto/Anghiera.jpg
+            - -o
+            - /img/Anghiera.jpg # On copie une image dans le volume en passant par le dossier img créé dans l'init docker pour l'occasion.
+          volumeMounts:
+            - mountPath: /img
+              name: volumepartage

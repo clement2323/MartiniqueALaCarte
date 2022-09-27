@@ -26,7 +26,7 @@ spec:
               name: volumepartage
            
       initContainers:
-        - name: download_images
+        - name: downloadimages
           image: curlimages/curl
           args:
             - https://minio.lab.sspcloud.fr/cguillo/site_carto/Anghiera.jpg

@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx
+  name: nginx #nom du service unique (trio)
 spec:
   selector:
-    app: nginx
+    app: appmartinique # c'est bien le label mis au pod qui est recherché local à un namespace
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 80
+      port: 80
+      targetPort: 80 # port standard
 
 
       

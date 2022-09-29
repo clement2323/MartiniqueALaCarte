@@ -35,10 +35,11 @@ spec:
           args: ["cp", "--recursive","s3/cguillo/site_carto/","dossierimage"]
           env:
             - name: MC_HOST_s3
-              value: https://$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY:$AWS_SESSION_TOKEN@$AWS_S3_ENDPOINT
+              value: https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
+              #"https://$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY:$AWS_SESSION_TOKEN@$AWS_S3_ENDPOINT"
                    # https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
 
           # On copie une image dans le volume en passant par le dossier img créé dans l'init docker pour l'occasion.
           volumeMounts:
             - mountPath: /dossierimage
-              name: volumepartage
+              name: volumepartage 

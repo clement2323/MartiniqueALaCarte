@@ -31,14 +31,20 @@ spec:
         - name: downloadimages
           image: minio/mc
           imagePullPolicy: Always
+          #mc alias set myminio https://myminio.example.net minioadminuser minioadminpassword
           command: ["mc"]
           args: ["cp", "--recursive","s3/cguillo/site_carto/","dossierimage"]
-          env:
-            - name: MC_HOST_s3
-              value: https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
+          #env:
+           # - name: MC_HOST_s3
+            #  value: https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
               #"https://$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY:$AWS_SESSION_TOKEN@$AWS_S3_ENDPOINT"
                    # https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
-
+          envFrom:
+            #- configMapRef:
+            #  name: env-configmap
+            # https://gist.github.com/troyharvey/4506472732157221e04c6b15e3b3f094
+            - secretRef:
+              name: env-secrets
           # On copie une image dans le volume en passant par le dossier img créé dans l'init docker pour l'occasion.
           volumeMounts:
             - mountPath: /dossierimage

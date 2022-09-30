@@ -40,10 +40,11 @@ spec:
               #"https://$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY:$AWS_SESSION_TOKEN@$AWS_S3_ENDPOINT"
                    # https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
           envFrom:
-          - secretRef:
-              name: env-secrets
-            #- configMapRef:
-            #  name: env-configmap
+          - configMapRef:
+              name: env-configmap
+          #- secretRef:
+              #name: env-secrets
+          
             # https://gist.github.com/troyharvey/4506472732157221e04c6b15e3b3f094
             
           # On copie une image dans le volume en passant par le dossier img créé dans l'init docker pour l'occasion.

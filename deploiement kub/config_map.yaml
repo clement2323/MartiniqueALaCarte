@@ -1,0 +1,8 @@
+# je crée la configmap pour le moment pour voir si je peux mettre dedans contrairement aux secrets des trucs non encodéss
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  MC_HOST_s3: TOFILL
+#echo https://$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY:$AWS_SESSION_TOKEN@$AWS_S3_ENDPOINT

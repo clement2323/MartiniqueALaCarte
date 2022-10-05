@@ -41,7 +41,7 @@ spec:
                    # https://id:pwd@minio.lab.sspcloud.fr# informations récupérable dans storage etc.. mais je veux utiliser les secrets
           envFrom:
           - configMapRef:
-              name: env-configmap
+              name: env-configmap-marti
           #- secretRef:
               #name: env-secrets
           

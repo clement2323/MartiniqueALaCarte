@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: env-configmap
+  name: env-configmap-marti
 data:
-  MC_HOST_s3: TOFILL
+  MC_HOST_s3:
 #echo https://$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY:$AWS_SESSION_TOKEN@$AWS_S3_ENDPOINT

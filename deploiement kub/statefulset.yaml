@@ -20,7 +20,7 @@ spec:
 
       containers:
         - name: nginx
-          image: cguillo/sitemartinique:v1
+          image: cguillo/sitemartinique:v2
           imagePullPolicy: Always # Je peux delete le pod pour qu'il aille chercher : la nouvelle image sur dockerhub
           volumeMounts:
             - mountPath: /usr/share/nginx/html/img  # c'est l'endroit dans le docker nginx où on veut monter le volume ie où on veut voir les fixchiers qu'on aura plcé grâce à l'init docker

@@ -42,7 +42,7 @@ spec:
           #- configMapRef:
           #    name: env-configmap-marti
           - secretRef:
-              name: env-secrets
+              name: env-secrets-site-marti
           
             # https://gist.github.com/troyharvey/4506472732157221e04c6b15e3b3f094
             
